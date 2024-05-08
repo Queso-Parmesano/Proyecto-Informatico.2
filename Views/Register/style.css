@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+  }
+  
+html,body {
+    height: 100%;
+      
+}
+  
+body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url(img/FondoBody.png);
+      background-size: cover;
+}
+  
+nav {
+    width: 100%;
+    height: 125px;
+    background-color: #9D6786;
+    opacity: 80%;
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nav {
+      margin-left: 12vh;
+}
+  
+.imgUser {
+      width: 35px;
+      height: 44px;
+      margin: auto;
+}
+  
+img.imgUser{
+      margin-left: 140vh;
+}
+  
+.logSquare {
+      width: 750px;
+      height: 500px;
+      background-image: url(img/Fondo.png);
+      border-radius: 25px;
+}
+  
+.formSquare {
+    width: 500px;
+    height: 500px;
+    background-color: #E8C8BB;
+    opacity: 90%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
+
+.btnForm {
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  
+    cursor: pointer;
+}
+  
+.container {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input{
+    display: block;
+    width: 64%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: rgb(23, 2, 100);
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+ 
+
+
+  
+.btn-nav {
+    --b: 4.3px;   
+    --s: .45em;  
+    --color: #0F0C1C;
+  
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.btn-nav:hover,
+.btn-nav:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+  
+.btn-nav:active {
+    background: var(--color);
+    color: #fff;
+}
+
