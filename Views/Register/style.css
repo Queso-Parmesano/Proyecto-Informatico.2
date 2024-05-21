@@ -17,31 +17,70 @@ body {
 }
   
 nav {
-    width: 100%;
-    height: 125px;
-    background-color: #9D6786;
-    opacity: 80%;
-    position: fixed;
-    top: 0;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 125px;
+  background-color: #9D6786;
+  opacity: 80%;
+  position: fixed;
+  top: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-nav {
-      margin-left: 12vh;
+  --b: 4.3px;
+  --s: .45em;
+  --color: #0F0C1C;
+
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-  
+
+.btn-nav:hover,
+.btn-nav:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.btn-nav:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.user {
+  display: flex;
+  margin-left: 80%;
+}
+
+.btn-user {
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
 .imgUser {
-      width: 35px;
-      height: 44px;
-      margin: auto;
-}
-  
-img.imgUser{
-      margin-left: 140vh;
+  width: auto;
+  height: 45px;
 }
   
 .logSquare {
@@ -124,42 +163,3 @@ img.imgUser{
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
   }
- 
-
-
-  
-.btn-nav {
-    --b: 4.3px;   
-    --s: .45em;  
-    --color: #0F0C1C;
-  
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
-    font-size: 16px;
-  
-    border: 0;
-  
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-  
-.btn-nav:hover,
-.btn-nav:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
-}
-  
-.btn-nav:active {
-    background: var(--color);
-    color: #fff;
-}
-
