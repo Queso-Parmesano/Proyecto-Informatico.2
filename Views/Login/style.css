@@ -91,22 +91,24 @@ nav {
     height: 46.3%;
     background-image: url(img/Fondo.png);
     border-radius: 25px;
+    text-align: center;
+    
 }
 
 .textLog {
     font-family: "Open Sans", sans-serif;
-    margin-left: 21%;
+    margin-left: 50%;
 }
 
-.formSquare {
-    width: 61.4%;
+.formSquare1 {
+    width: 100%;
     height: 100%;
     background-color: #E8C8BB;
     opacity: 90%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     margin-left: auto;
-    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +116,25 @@ nav {
     text-align: center;
 }
 
-.inputs {
+.formSquare2 {
+    width: 100%;
+    height: 100%;
+    background-color: #E8C8BB;
+    opacity: 90%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: auto;
+    clip-path: polygon(0% 0%, 50% 0%, 75% 100%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.log-inputs {
     text-align: left;
     margin-top: 6%;
     margin-left: 20%;
@@ -124,6 +144,24 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 58%;
+}
+
+.reg-inputs{
+    text-align: left;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.reg-inputs label {
+    margin-bottom: 5px;
 }
 
 input{
@@ -131,32 +169,34 @@ input{
     border: none;
     outline: none;
     box-sizing: border-box;
-    width: 100%;
+    width: 60%;
     background: #ecf0f3;
     padding: 4%;
     padding-left: 8%;
     height: 45px;
     font-size: 14px;
     border-radius: 50px;
-    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    box-shadow: inset 7px 7px 7px #cbced1, inset -7px -7px 7px white;
 }
 
 input::placeholder {
     color: gray;
 }
 
-button.btn-login {
+button.btn-submit {
     color: white;
-    margin-top: 9%;
+    margin-top: 6%;
     background: #91279c;
     opacity: 80;
     height: 20%;
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
-    width: 60%;
+    width: 45%;
     padding: 0;
     border: none;
     outline: none;
     box-sizing: border-box;
 }
+
+
